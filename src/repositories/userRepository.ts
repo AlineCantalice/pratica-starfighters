@@ -1,4 +1,4 @@
-import connection from "../database/postgres.js";
+import connection from "../database/postgres";
 
 export async function verifyUser (user: string){
     const arrUser = await connection.query(`SELECT id FROM fighters WHERE username=$1`, [user])

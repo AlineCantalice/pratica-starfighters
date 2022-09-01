@@ -1,8 +1,8 @@
 import express from "express";
 import cors from 'cors';
 import dotenv from 'dotenv';
-import userRouter from './routers/userRouter.js';
-import handleErrorMiddleware from "./middlewares/handleErrorMiddleware.js";
+import userRouter from './routers/userRouter';
+import handleErrorMiddleware from "./middlewares/handleErrorMiddleware";
 
 dotenv.config();
 
